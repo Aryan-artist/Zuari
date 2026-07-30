@@ -58,14 +58,14 @@ const Privacypage = () => {
                     <div className="rounded-4xl border border-(--border)/60 bg-(--card) p-10 shadow-soft">
                         <h2 className="font-display text-3xl">Introduction</h2>
                         <p className="mt-6 leading-8 text-(--muted-foreground)">
-                            Zuari Insurance Brokerage Limited ("Company," "We," "Us," or "Our") is committed to protecting
+                            Zuari Insurance brokers Limited ("Company," "We," "Us," or "Our") is committed to protecting
                             the privacy and security of your personal information. We take your concerns
                             seriously, and we will periodically update this Privacy Notice to reflect
                             changes in our data practices or applicable law.
                         </p>
                         <p className="mt-4 leading-8 text-(--muted-foreground)">
-                            This Privacy Notice applies to Zuari Insurance Brokerage Limited and its subsidiary, associate,
-                            and affiliate companies (the "Zuari Insurance Brokerage Limited Group").
+                            This Privacy Notice applies to Zuari Insurance brokers Limited and its subsidiary, associate,
+                            and affiliate companies (the "Zuari Insurance brokers Limited Group").
                         </p>
                     </div>
 
@@ -73,7 +73,7 @@ const Privacypage = () => {
                     <div className="rounded-4xl border border-(--border)/60 bg-(--card) p-10 shadow-soft">
                         <h2 className="font-display text-3xl">Interpretation and Definitions</h2>
                         <ul className="mt-6 space-y-3 list-disc pl-6 text-(--muted-foreground)">
-                            <li><strong>Company</strong> refers to Zuari Insurance Brokerage Limited, registered at [Registered Office Address].</li>
+                            <li><strong>Company</strong> refers to Zuari Insurance brokers Limited, registered at [Registered Office Address].</li>
                             <li><strong>Service</strong> refers to the Company's services accessible via our website and mobile applications.</li>
                             <li><strong>Personal Data</strong> means any information relating to an identified or identifiable individual.</li>
                             <li><strong>Data Subject / Data Principal</strong> is any living individual who is the subject of Personal Data.</li>
@@ -91,7 +91,7 @@ const Privacypage = () => {
                     <div className="rounded-4xl border border-(--border)/60 bg-(--card) p-10 shadow-soft">
                         <h2 className="font-display text-3xl">Data Protection Officer</h2>
                         <p className="mt-6 leading-8 text-(--muted-foreground)">
-                            Zuari Insurance Brokerage Limited has appointed an internal Data Protection Officer (DPO) to
+                            Zuari Insurance brokers Limited has appointed an internal Data Protection Officer (DPO) to
                             address inquiries or concerns regarding our personal data practices.
                         </p>
                         <ul className="mt-6 space-y-2 text-(--muted-foreground)">
@@ -199,10 +199,9 @@ const Privacypage = () => {
                             personal data on that platform.
                         </p>
                         <ul className="mt-6 space-y-2 text-(--muted-foreground)">
-                            <li>LinkedIn: [link]</li>
-                            <li>Twitter/X: [link]</li>
-                            <li>YouTube: [link]</li>
-                            <li>Instagram: [link]</li>
+                            <li>LinkedIn: <a href="https://www.linkedin.com/company/zuari-insurance-brokers-ltd/about/?viewAsMember=true" target="_blank" rel="noopener noreferrer">Zuari Insurance Brokers Limited</a></li>
+                            <li>Twitter/X: <a href="" target="_blank" rel="noopener noreferrer">Zuari Insurance</a></li>
+                            <li>Instagram: <a href="" target="_blank" rel="noopener noreferrer">Zuari Insurance</a></li>
                         </ul>
                     </div>
 
@@ -210,7 +209,7 @@ const Privacypage = () => {
                     <div className="rounded-4xl border border-(--border)/60 bg-(--card) p-10 shadow-soft">
                         <h2 className="font-display text-3xl">Transferring Personal Data</h2>
                         <p className="mt-6 leading-8 text-(--muted-foreground)">
-                            Zuari Insurance Brokerage Limited is headquartered in Delhi, India, and processes information
+                            Zuari Insurance Brokers Limited is headquartered in Delhi, India, and processes information
                             within India. Where data processors are engaged, we use data processing
                             agreements and appropriate contractual safeguards, and require compliance
                             with applicable data protection laws.
@@ -500,7 +499,7 @@ const Privacypage = () => {
                         </p>
                         <ul className="mt-6 space-y-2 text-(--muted-foreground)">
                             <li><strong>Name:</strong> [DPO Name]</li>
-                            <li><strong>Company:</strong> Zuari Insurance Brokerage Limited</li>
+                            <li><strong>Company:</strong> Zuari Insurance brokers Limited</li>
                             <li><strong>Address:</strong> A-32, First Floor, Mohan Cooperative Industrial Estate Mathura Road, Badarpur, New Delhi-110044</li>
                             <li><strong>Email:</strong> [dpo@yourcompany.com]</li>
                         </ul>
