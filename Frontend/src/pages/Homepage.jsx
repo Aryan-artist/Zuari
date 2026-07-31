@@ -47,7 +47,7 @@ import Aviva_logo from "../assets/Partners/aviva_logo.webp";
 import Bgil_logo from "../assets/Partners/BGIL_logo.gif";
 import HDFC_Life from "../assets/Partners/HDFCLife.png";
 import ICICI_Lombard from "../assets/Partners/icici_lombard_logo.webp";
-import ICICI_prudential from "../assets/Partners/icici_prudential.png";
+import ICICI_prudential from "../assets/Partners/Icici_prudential.png";
 import Iffco_tokio from "../assets/Partners/Iffco_tokio.jpg";
 import Magma_Logo from "../assets/Partners/Magma_Logo.svg";
 import Nia from "../assets/Partners/NIA_logo.webp";
