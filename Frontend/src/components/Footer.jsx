@@ -5,6 +5,7 @@ import InstaLog from "../assets/insta.jpg";
 import Faceboo from "../assets/facebookLogo.png";
 import LinkedI from "../assets/LinkedInLogo.jpg";
 import Play from "../assets/PlayStore.png";
+import Irdai from "../assets/irdai.png";
 
 const Footer = () => {
     return (
@@ -99,6 +100,7 @@ const Footer = () => {
                             <p> License validity till 12-12-2026.</p>
                         </p>
                     </p>
+                    <img src={Irdai} alt="IRDAI" className="h-15 w-auto object-contain" />
                 </div>
             </div>
         </footer>
