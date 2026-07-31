@@ -5,6 +5,7 @@ import Contactpage from "./pages/Contactpage";
 import Aboutpage from "./pages/Aboutpage";
 import Privacypage from "./pages/Privacypage"
 import Careerpage from "./pages/Careerpage"
+import Loginpage from "./pages/LoginPage"
 
 export const router = createBrowserRouter([
     {
@@ -30,5 +31,9 @@ export const router = createBrowserRouter([
     {
         path:"/career",
         element:<Careerpage/>
+    },
+    {
+        path:"/login",
+        element:<Loginpage/>
     }
 ]) 

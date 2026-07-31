@@ -106,9 +106,11 @@ const Careerpage = () => {
                     <div className="relative mx-auto max-w-7xl px-6">
                         <div className="max-w-3xl animate-reveal">
 
-                            <h1 className="mt-5 font-display text-5xl leading-tight md:text-6xl">
-                                Build the future of <span className="italic">insurance</span> with us.
+                            <h1 className="mt-5 font-display text-10xl leading-tight md:text-6xl">
+                                Accelerate Your Career at Zuari Insurance & Brokers Limited 
+                                
                             </h1>
+                            <span className="text-(--coral)"> Join us to reshape the insurance landscape explore the perfect role for you.</span>
 
                             <div className="mt-8 flex flex-wrap gap-3">
 
@@ -217,11 +219,8 @@ const Careerpage = () => {
                         <div className="absolute -right-16 -top-16 h-64 w-64 rounded-full bg-(--coral)/20 blur-3xl animate-blob" />
                         <div className="relative flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
                             <div className="max-w-xl">
-                                <h3 className="font-display text-3xl md:text-4xl">Don't see a fit? Say hi anyway.</h3>
-                                <p className="mt-3 text-(--muted-foreground)">
-                                    We're always meeting people who care about doing insurance right. Send your CV and a note
-                                    — we read every one.
-                                </p>
+                                <h3 className="font-display text-3xl md:text-4xl">Join Us!</h3>
+                                
                             </div>
                             <button
                                 onClick={() => setCvOpen(true)}

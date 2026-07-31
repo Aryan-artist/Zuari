@@ -42,6 +42,21 @@ import Zuari_Money from "../assets/Comp/Zuari_Money.jpg";
 import Zuari_Premium from "../assets/Comp/Zuari_Premium.jpg";
 import Zuari_RainForest from "../assets/Comp/Zuari_RainForest.jpg";
 import Zuari_IAV from "../assets/Comp/Zuari-IAV.jpg";
+import Aditya_Birla_Logo from "../assets/Partners/Aditya_birla.webp";
+import Aviva_logo from "../assets/Partners/aviva_logo.webp";
+import Bgil_logo from "../assets/Partners/BGIL_logo.gif";
+import HDFC_Life from "../assets/Partners/HDFCLife.png";
+import ICICI_Lombard from "../assets/Partners/icici_lombard_logo.webp";
+import ICICI_prudential from "../assets/Partners/icici_prudential.png";
+import Iffco_tokio from "../assets/Partners/Iffco_tokio.jpg";
+import Magma_Logo from "../assets/Partners/Magma_Logo.svg";
+import Nia from "../assets/Partners/NIA_logo.webp";
+import Oriental_Insure from "../assets/Partners/Oriental_insure.png";
+import Royal_Sundaram from "../assets/Partners/rs_logo.png";
+import TataAig from "../assets/Partners/TataAigLogo.svg";
+import Zurich_logo from "../assets/Partners/zurich_logo.avif";
+import Future_Generali from "../assets/Partners/Future_Generali.png";
+import Induslnd_General from "../assets/Partners/Induslnd_General.png";
 
 
 
@@ -148,29 +163,69 @@ const Homepage = () => {
   ];
   const Partners = [
     {
-      name: "Adventz Limited",
-      url: Adventz_logo,
+      name: "Aditya_Birla_Logo",
+      url: Aditya_Birla_Logo
     },
     {
-      name: "Farmhub",
-      url: Farmhub_logo,
+      name: "Aviva_logo",
+      url: Aviva_logo,
+      height: "h-8", bg: "bg-white"
     },
     {
-      name: "Zuari Management Services",
-      url: GSMA_logo
+      name: "Bgil_logo",
+      url: Bgil_logo  
     },
     {
-      name: "Jai Kisan",
-      url: JaiKisan_logo
+      name: "HDFC_Life",
+      url: HDFC_Life
+    },
+    { 
+      name: "ICICI Lombard", 
+      url: ICICI_Lombard, 
+      height: "h-8", bg: "bg-black" 
     },
     {
-      name: "Nymwac",
-      url: Nymwac_logo
+      name: "ICICI_prudential",
+      url: ICICI_prudential
     },
     {
-      name: "Simon India",
-      url: Simon_logo
+      name: "Iffco_tokio",
+      url: Iffco_tokio
     },
+    {
+      name: "Magma_Logo",
+      url: Magma_Logo
+    },
+    {
+      name: "Nia",
+      url: Nia,
+      bg: "bg-black"
+    },
+    {
+      name: "Oriental_Insure",
+      url: Oriental_Insure,
+      bg: "bg-white"
+    },
+    {
+      name: "Royal_Sundaram",
+      url: Royal_Sundaram
+    },
+    {
+      name: "TataAig",
+      url: TataAig
+    },
+    {
+      name: "Zurich_logo",
+      url: Zurich_logo
+    },
+    {
+      name: "Future_Generali",
+      url: Future_Generali
+    },
+    {
+      name: "Induslnd_General",
+      url: Induslnd_General
+    }
 
   ];
 
@@ -465,11 +520,13 @@ const Homepage = () => {
                 className="mx-8 flex shrink-0 items-center whitespace-nowrap font-display text-2xl font-semibold text-(--foreground)/40"
               >
                 {Partners?.url ? (
-                  <img
-                    src={Partners.url}
-                    alt={Partners.name}
-                    className="h-10 w-24 object-contain md:h-12 md:w-28"
-                  />
+                  <span className={`inline-flex items-center justify-center ${Partners.bg || ""}`}>
+                    <img
+                      src={Partners.url}
+                      alt={Partners.name}
+                      className={`w-auto object-contain ${Partners.height || "h-10 md:h-12"}`}
+                    />
+                  </span>
                 ) : (
                   Partners?.name
                 )}
