@@ -107,7 +107,7 @@ const Careerpage = () => {
                         <div className="max-w-3xl animate-reveal">
 
                             <h1 className="mt-5 font-display text-10xl leading-tight md:text-6xl">
-                                Accelerate Your Career at Zuari Insurance & Brokers Limited 
+                                Accelerate Your Career at Zuari Insurance Brokers Limited 
                                 
                             </h1>
                             <span className="text-(--coral)"> Join us to reshape the insurance landscape explore the perfect role for you.</span>
@@ -139,7 +139,7 @@ const Careerpage = () => {
                     <div className="flex flex-col justify-between gap-4 md:flex-row md:items-end">
                         <div>
                             <span className="text-sm font-semibold uppercase tracking-wider text-(--coral)">Current Openings</span>
-                            <h2 className="mt-2 font-display text-4xl md:text-5xl">Find your seat.</h2>
+                            {/* <h2 className="mt-2 font-display text-4xl md:text-5xl">Find your seat.</h2> */}
 
                         </div>
 

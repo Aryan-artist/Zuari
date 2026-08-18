@@ -44,14 +44,14 @@ import Zuari_RainForest from "../assets/Comp/Zuari_RainForest.jpg";
 import Zuari_IAV from "../assets/Comp/Zuari-IAV.jpg";
 import Aditya_Birla_Logo from "../assets/Partners/Aditya_birla.webp";
 import Aviva_logo from "../assets/Partners/aviva_logo.webp";
-import Bgil_logo from "../assets/Partners/BGIL_logo.gif";
+import Bgil_logo from "../assets/Partners/BGIL_logo.jpg";
 import HDFC_Life from "../assets/Partners/HDFCLife.png";
-import ICICI_Lombard from "../assets/Partners/icici_lombard_logo.webp";
+import ICICI_Lombard from "../assets/Partners/icici_lombard_logo.jpg";
 import ICICI_prudential from "../assets/Partners/Icici_prudential.png";
 import Iffco_tokio from "../assets/Partners/Iffco_tokio.jpg";
 import Magma_Logo from "../assets/Partners/Magma_Logo.svg";
-import Nia from "../assets/Partners/NIA_logo.webp";
-import Oriental_Insure from "../assets/Partners/Oriental_insure.png";
+import Nia from "../assets/Partners/NIA_logo.png";
+import Oriental_Insure from "../assets/Partners/Oriental_insure.jpg";
 import Royal_Sundaram from "../assets/Partners/rs_logo.png";
 import TataAig from "../assets/Partners/TataAigLogo.svg";
 import Zurich_logo from "../assets/Partners/zurich_logo.avif";
@@ -291,7 +291,7 @@ const Homepage = () => {
       body: "Every covered employee gets a modern app: instant e-cards, network hospital search, teleconsults, and cashless claim tracking.",
       bullets: [
         "24/7 doctor on chat",
-        "Family enrollment in 3 taps",
+        "Family enrollment",
         "Wellness credits & rewards",
       ],
       img: careImg,
@@ -314,8 +314,8 @@ const Homepage = () => {
       title: "Dashboards, not spreadsheets.",
       body: "See enrollment, claims, and utilization in real-time. Add employees in bulk, download endorsements, and get renewal alerts before they matter.",
       bullets: [
-        "Bulk CSV onboarding",
-        "Live claims analytics",
+        "Bulk onboarding",
+        "Claims analytics",
         "HRMS integrations",
       ],
       img: businessImg,
@@ -593,12 +593,10 @@ const Homepage = () => {
         <div className="relative mx-auto flex max-w-7xl flex-col items-center gap-6 px-6 text-center text-white">
 
           <h2 className="max-w-3xl font-display text-4xl md:text-6xl">
-            We Care, <span className="italic">Every Where.</span>
+            Your Protection. <span className="italic"> Our Promise.</span>
           </h2>
           <p className="max-w-2xl text-white/90">
-            When a claim happens, a dedicated Zuari Insurance Brokers Limited
-            specialist takes over — coordinating with the hospital, chasing
-            paperwork, and keeping your team informed every step of the way.
+            From claim registration to settlement, we make the process straightforward, transparent, and hassle-free.
           </p>
           <Link
             to="/contact"
