@@ -40,7 +40,7 @@ const Solutionpage = () => {
   return (
     <main>
       <Navbar />
-      <div className="mx-auto max-w-7xl px-6 pt-16 pb-2">
+      <div className="mx-auto max-w-7xl px-6 pt-20 pb-2">
         <div className="relative overflow-hidden rounded-4xl bg-grad-cool p-12 md:p-20 )">
           <div className="pointer-events-none absolute -top-24 right-10 h-72 w-72 rounded-full bg-coral opacity-30 blur-3xl animate-blob" />
           <div className="relative text-(--cream) w-full">
