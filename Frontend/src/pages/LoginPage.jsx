@@ -76,7 +76,9 @@ const LoginPage = () => {
               <ul className="mt-10 space-y-3">
                 {[
                   "Live claim tracking across all providers",
-                  "One-click endorsements and dependent updates",
+                  "One-click claim support and assistance",
+                  "One-click endorsements and dependent updates"
+                  
 
                 ].map((f, i) => (
                   <li
