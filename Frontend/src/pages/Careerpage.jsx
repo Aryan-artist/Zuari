@@ -110,7 +110,7 @@ const Careerpage = () => {
                                 Accelerate Your Career at Zuari Insurance Brokers Limited 
                                 
                             </h1>
-                            <span className="text-(--coral)"> Join us to reshape the insurance landscape explore the perfect role for you.</span>
+                            {/* <span className="text-(--coral)"> Join us to reshape the insurance landscape explore the perfect role for you.</span> */}
 
                             <div className="mt-8 flex flex-wrap gap-3">
 
