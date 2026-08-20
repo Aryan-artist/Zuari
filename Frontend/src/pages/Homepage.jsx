@@ -371,7 +371,7 @@ const Homepage = () => {
           <div className="animate-reveal">
             <span className="inline-flex items-center gap-2 rounded-full border border-(--border)/70 bg-(--background)/70 px-3 py-1 text-xs font-medium backdrop-blur">
               <Sparkles className="h-3.5 w-3.5 text-(--coral)" />
-              IRDAI licensed insurance brokers
+              IRDAI Licensed Insurance Brokers
             </span>
             <h1 className="mt-6 font-display text-5xl leading-[1.05] tracking-tight md:text-7xl">
               Insurance your{" "}

@@ -63,21 +63,23 @@ const LoginPage = () => {
           {/* Left: story panel */}
           <div className="hidden lg:flex flex-col justify-between animate-reveal">
             <div>
-              <span className="inline-flex items-center gap-2 rounded-full border border-(--border)/60 bg-(--card)/70 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-(--coral) backdrop-blur">
+              {/* <span className="inline-flex items-center gap-2 rounded-full border border-(--border)/60 bg-(--card)/70 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-(--coral) backdrop-blur">
                 <Sparkles size={14} /> Welcome back
-              </span>
+              </span> */}
               <h1 className="mt-6 font-display text-5xl leading-[1.05] xl:text-6xl">
-                Sign in to your <span className="italic text-grad">Zuari</span> dashboard.
+                Sign in to your  dashboard.
               </h1>
               <p className="mt-6 max-w-md text-lg text-(--muted-foreground)">
-                Manage policies, track claims in real-time, and take care of your team's benefits — all in one warmly-designed workspace.
+                Manage policies, track claims in real-time, and take care of your benefits — all in one warmly-designed workspace.
               </p>
 
               <ul className="mt-10 space-y-3">
                 {[
                   "Live claim tracking across all providers",
-                  "One-click endorsements and dependent updates",
-                  "Bank-grade security with SOC 2 controls",
+                  "One-click claim support and assistance",
+                  "One-click endorsements and dependent updates"
+                  
+
                 ].map((f, i) => (
                   <li
                     key={f}
@@ -122,30 +124,41 @@ const LoginPage = () => {
             <div className="relative rounded-[2rem] border border-(--border)/60 bg-(--card)/90 p-8 shadow-soft backdrop-blur-xl md:p-10">
               <div className="mb-8">
                 <h2 className="font-display text-3xl md:text-4xl">Log in</h2>
-                <p className="mt-2 text-sm text-(--muted-foreground)">
-                  New here?{" "}
-                  <Link to="/contact" className="font-semibold text-(--coral) hover:underline">
-                    Book a demo
-                  </Link>
-                </p>
               </div>
 
               {/* Social */}
-              <div className="grid grid-cols-2 gap-3">
+            
+              <div className="grid grid-cols-2 gap-4">
                 {[
-                  { label: "Google", icon: <GoogleIcon /> },
-                  { label: "Microsoft", icon: <MicrosoftIcon /> },
+                  {
+                    label: "Google",
+                    icon: <GoogleIcon />,
+                    link: "https://accounts.google.com/",
+                  },
+                  {
+                    label: "Microsoft",
+                    icon: <MicrosoftIcon />,
+                    link: "https://login.microsoftonline.com/",
+                  },
                 ].map((p) => (
-                  <button
+                  <Link
                     key={p.label}
-                    type="button"
-                    className="group flex items-center justify-center gap-2 rounded-xl border border-(--border) bg-(--background)/60 px-4 py-2.5 text-sm font-medium transition hover:-translate-y-0.5 hover:border-(--foreground)/30 hover:shadow-soft"
+                    to={p.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setOpen(false)}
+                    className="flex h-11 items-center justify-center gap-3 rounded-full border border-[#e6dece] bg-[#fdfbf6] px-5 text-[16px] font-medium text-[#1f2937] transition-all duration-200 hover:-translate-y-0.5 hover:border-[#d8cfbf] hover:bg-white hover:shadow-sm"
                   >
-                    {p.icon}
+                    <span className="flex shrink-0 items-center justify-center">
+                      {p.icon}
+                    </span>
+
                     <span>{p.label}</span>
-                  </button>
+                  </Link>
                 ))}
               </div>
+
+
 
               <div className="my-6 flex items-center gap-3">
                 <div className="h-px flex-1 bg-(--border)" />
@@ -187,14 +200,12 @@ const LoginPage = () => {
                   <label className="inline-flex items-center gap-2 cursor-pointer select-none">
                     <span
                       onClick={() => setRemember(!remember)}
-                      className={`relative inline-flex h-5 w-9 items-center rounded-full transition ${
-                        remember ? "bg-(--coral)" : "bg-(--border)"
-                      }`}
+                      className={`relative inline-flex h-5 w-9 items-center rounded-full transition ${remember ? "bg-(--coral)" : "bg-(--border)"
+                        }`}
                     >
                       <span
-                        className={`inline-block h-4 w-4 transform rounded-full bg-white shadow transition ${
-                          remember ? "translate-x-4" : "translate-x-0.5"
-                        }`}
+                        className={`inline-block h-4 w-4 transform rounded-full bg-white shadow transition ${remember ? "translate-x-4" : "translate-x-0.5"
+                          }`}
                       />
                     </span>
                     <span className="text-(--muted-foreground)">Remember me</span>
@@ -228,9 +239,9 @@ const LoginPage = () => {
                 </button>
               </form>
 
-              <p className="mt-6 text-center text-xs text-(--muted-foreground)">
+              {/* <p className="mt-6 text-center text-xs text-(--muted-foreground)">
                 Protected by 256-bit encryption · SOC 2 Type II
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
@@ -248,9 +259,8 @@ function Field({ icon, label, type, value, onChange, placeholder, required, trai
     <div>
       <label className="mb-1.5 block text-xs font-medium text-(--muted-foreground)">{label}</label>
       <div
-        className={`group relative flex items-center gap-3 rounded-xl border bg-(--background)/60 px-3.5 py-3 transition ${
-          active ? "border-(--coral) ring-4 ring-(--coral)/10" : "border-(--border) hover:border-(--foreground)/30"
-        }`}
+        className={`group relative flex items-center gap-3 rounded-xl border bg-(--background)/60 px-3.5 py-3 transition ${active ? "border-(--coral) ring-4 ring-(--coral)/10" : "border-(--border) hover:border-(--foreground)/30"
+          }`}
       >
         <span className={`transition ${active ? "text-(--coral)" : "text-(--muted-foreground)"}`}>{icon}</span>
         <input
